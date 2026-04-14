@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahi Baker's</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:pink;
+}
+
+/* TOPBAR */
+.topbar{
+    background:#fde047;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+.topbar span{
+    flex:1 1 100%;
+    color:#1e3a8a;
+}
+
+/* HEADER */
+header{
+    background:#ff6b6b;
+    color:white;
+    padding: 20px;
+    text-align:center;
+    font-size:22px;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:10px;
+    background:#fff;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+}
+
+/* HERO */
+.hero{
+    height:60vh;
+    background:url('https://images.unsplash.com/photo-1578985545062-69928b1d9587') no-repeat center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:15px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:24px;
+    background:rgba(0,0,0,0.5);
+    color:white;
+    padding:15px;
+    border-radius:10px;
+}
+
+/* SECTION */
+.section{
+    padding:40px 15px;
+    text-align:center;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+}
+
+.card{
+    background:white;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+/* TABLET */
+@media(min-width:600px){
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+}
+
+/* DESKTOP */
+@media(min-width:992px){
+    .cards{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .hero{
+        height:80vh;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+}
+
+/* FOOTER */
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* CALL BUTTON */
+.call-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:green;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.call-btn:hover{
+    background:darkgreen;
+    transform:scale(1.05);
+}
+
+.card{
+    text-align:center;
+    padding:10px;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.item-name{
+    margin-top:8px;
+    font-weight:600;
+    font-size:16px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <span><h4>Mr. Aadesh Pawar</h4></span>
+    <span><h4>Mob. 9992863965</h4> </span>
+</div>
+
+<center>
+<h1>🍰 Mahi Baker's</h1>
+</center>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#address">Address</a>
+</nav>
+
+<div class="hero">
+    <h1>100% Eggless Cakes</h1>
+</div>
+
+<section class="section" id="menu">
+    <h2>Our Delicious Cakes</h2>
+
+    <div class="cards">
+        <div class="card"><img src="cake.webp" onclick="openImage(this.src)"></div>
+        <div class="card"><img src="cake 2.jfif" onclick="openImage(this.src)"></div>
+        <div class="card"><img src="cakes.jfif" onclick="openImage(this.src)"></div>
+        <div class="card"><img src="cake 1.webp" onclick="openImage(this.src)"></div>
+        <div class="card"><img src="cake 3.webp" onclick="openImage(this.src)"></div>
+        <div class="card"><img src="cake4.jpg" onclick="openImage(this.src)"></div>
+    </div><br><br>
+
+    <h2>Our Other Items</h2><br>
+<div class="cards">
+        <div class="card"><img src="rasgulla.jpg" onclick="openImage(this.src)"><p class="item-name"> White Rasgulla</p></div>
+        <div class="card"><img src="black rasgulla.webp" onclick="openImage(this.src)"><p class="item-name">Black Rasgulla</p></div>
+        <div class="card"><img src="icecream.webp" onclick="openImage(this.src)"><p class="item-name">Ice Cream</p></div>
+        <div class="card"><img src="Pastry.webp" onclick="openImage(this.src)"><p class="item-name">Pastry</p></div>
+        <div class="card"><img src="Coke.webp" onclick="openImage(this.src)"><p class="item-name">Coke</p></div>
+        <div class="card"><img src="chips.jpg" onclick="openImage(this.src)"><p class="item-name">Chips</p></div>
+        <div class="card"><img src="kurkure.webp" onclick="openImage(this.src)"><p class="item-name">Kurkure</p></div>
+        <div class="card"><img src="BISLERI.jpg" onclick="openImage(this.src)"><p class="item-name">Water Bottle</p></div>
+        <div class="card"><img src="BALLON.jpg" onclick="openImage(this.src)"><p class="item-name">Ballons</p></div>
+        <div class="card"><img src="Cake stick.webp" onclick="openImage(this.src)"><p class="item-name">Cake Shot</p></div>
+        <div class="card"><img src="candle.jpg" onclick="openImage(this.src)"><p class="item-name">Candles</p></div>
+        <div class="card"><img src="cap.jpg" onclick="openImage(this.src)"><p class="item-name">Birthday Cap</p></div>
+        <div class="card"><img src="number candle.webp" onclick="openImage(this.src)"><p class="item-name">Number Candle</p></div>
+        <div class="card"><img src="glass cake.jpg" onclick="openImage(this.src)"><p class="item-name">Glass Pastry</p></div>
+        <div class="card"><img src="taj.jpg" onclick="openImage(this.src)"><p class="item-name">Royal Crown</p></div>
+        <div class="card"><img src="chochlate.jpg" onclick="openImage(this.src)"><p class="item-name">Chochlates</p></div>
+        <div class="card"><img src="pizza.webp" onclick="openImage(this.src)"><p class="item-name">Pizza</p></div>
+        <div class="card"><img src="burger.jpg" onclick="openImage(this.src)"><p class="item-name">Burger</p></div>
+        <div class="card"><img src="sandwich.avif" onclick="openImage(this.src)"><p class="item-name">Sandwich</p></div>
+    </div>
+
+
+</section>
+
+<section class="section" id="about">
+    <h2>About Us</h2>
+    <p>
+    <p>
+Welcome to <b>Mahi Baker's</b>, where every cake is made with love and perfection. 
+We specialize in freshly baked, high-quality cakes that bring sweetness to your special moments. 
+From classic chocolate cakes to customized designer cakes, we ensure taste, quality, and creativity in every bite. 
+Our mission is to make your celebrations more memorable with our delicious and beautifully crafted cakes. 
+At Mahi Baker's, we don’t just bake cakes — we create happiness.
+</p>
+</section>
+
+<!--contact Us-->
+<div class="section" id="contact">
+<h2>Contact Us</h2>
+<a href="tel:9992863965" class="call-btn">📞 Call Now</a><br>
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/919992863965" target="_blank" class="call-btn">
+💬 Contact on WhatsApp
+</a>
+
+<div class="section" id="address">
+<h2>Address</h2>
+<p>📍 Sondhapur Chowk, Near Lather Clinic, Jattal Road, Panipat (Haryana)</p>
+</div>
+
+<div id="imageBox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); justify-content:center; align-items:center;">
+    <img id="fullImg" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
+
+<footer>
+    © 2026 Mahi Baker's || Made with ❤️
+</footer>
+
+<script>
+function openImage(src){
+    document.getElementById("imageBox").style.display = "flex";
+    document.getElementById("fullImg").src = src;
+}
+
+// click anywhere to close
+document.getElementById("imageBox").onclick = function(){
+    this.style.display = "none";
+}
+</script>
+
+</body>
+</html>
